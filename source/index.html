@@ -14,7 +14,45 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header></header>
+  <header class="page-header">
+    <button class="page-header__toggle" type="button" aria-label="To open and close the side nav.">
+      <span class="page-header__toggle-line"></span>
+    </button>
+    <nav class="page-header__navigation navigation">
+      <a class="navigation__logo" href="index.html" aria-label="Back to the homepage." aria-current="page">
+        <img class="navigation__image" src="img/content/logo.svg" width="130" height="17" alt="GlobalTalk logotype.">
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-current="page">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Textbook</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Statistics</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Games</a>
+          <ul class="navigation__list navigation__list--dropdown">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Sprint</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Audio-call</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <details class="toolbar">
+      <summary class="toolbar__user">
+        <img class="toolbar__avatar" src="#" alt="">
+        <span class="toolbar__name">Alex</span>
+      </summary>
+      <a class="toolbar__link" href="#">Sign Out →</a>
+    </details>
+  </header>
   <main></main>
   <footer></footer>
 </body>
