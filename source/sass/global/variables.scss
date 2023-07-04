@@ -1,0 +1,37 @@
+// Colors
+// ------------------------
+
+// Default
+
+$color-black:                               #000000;
+$color-white:                               #ffffff;
+$transparent:                               rgba(0, 0, 0, 0);
+
+// Project palette
+
+$grey-light:                                #f6f5f4;
+$grey-medium:                               #e0e0e0;
+$grey-icon:                                 #bababa;
+$grey-dark:                                 #585858;
+$cyan-light:                                #c3dce3;
+$cyan-dark:                                 #2b788b;
+$cadet-blue:                                #5996a5;
+$pink-light:                                #f2d4dc;
+$pink-dark:                                 #945069;
+$violet-blue:                               #a15993;
+$apple-blossom:                             #a95151;
+$dark-coral:                                #cb5b43;
+$oxley:                                     #639b6d;
+$sundance:                                  #c4a24c;
+
+// Typography
+// ------------------------
+
+$ff-dela: "Dela Gothic One";
+$ff-montserrat: "Montserrat";
+
+// Viewport
+// ------------------------
+
+$vp-768: 768px;
+$vp-1920: 1920px;
