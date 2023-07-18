@@ -14,46 +14,189 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="page-header">
-    <button class="page-header__toggle" type="button" aria-label="To open and close the side nav.">
-      <span class="page-header__toggle-line"></span>
-    </button>
-    <nav class="page-header__navigation navigation">
-      <a class="navigation__logo" href="index.html" aria-label="Back to the homepage." aria-current="page">
-        <img class="navigation__image" src="img/content/logo.svg" width="130" height="17" alt="GlobalTalk logotype.">
+  <header class="header">
+    <div class="container">
+      <button class="header__toggle" type="button" aria-label="To open and close the side nav.">
+        <span class="header__toggle-line"></span>
+      </button>
+      <a class="header__logo" href="index.html" aria-label="Back to the homepage." aria-current="page">
+        <img src="img/content/logo.svg" width="130" height="17" alt="GlobalTalk logotype.">
       </a>
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="navigation__link" href="#" aria-current="page">Home</a>
+      <nav class="header__navigation main-menu">
+        <ul class="main-menu__list">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#" aria-current="page">Home</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Textbook</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Statistics</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Games</a>
+            <ul class="main-menu__list main-menu__list--dropdown">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Sprint</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#">Audio-call</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="toolbar">
+        <li class="toolbar__item">
+          <a class="toolbar__user" href="#">
+            <div class="toolbar__image"></div>
+            <span class="toolbar__name">Alex</span>
+          </a>
         </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Textbook</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Statistics</a>
-        </li>
-        <li class="navigation__item">
-          <a class="navigation__link" href="#">Games</a>
-          <ul class="navigation__list navigation__list--dropdown">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Sprint</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Audio-call</a>
-            </li>
-          </ul>
+        <li class="toolbar__item">
+          <a class="toolbar__link" href="#">Sign Out &rarr;</a>
         </li>
       </ul>
-    </nav>
-    <details class="toolbar">
-      <summary class="toolbar__user">
-        <img class="toolbar__avatar" src="#" alt="">
-        <span class="toolbar__name">Alex</span>
-      </summary>
-      <a class="toolbar__link" href="#">Sign Out →</a>
-    </details>
+    </div>
   </header>
-  <main></main>
-  <footer></footer>
+  <main>
+    <h1 class="visually-hidden">Online course platform Global Talk</h1>
+    <section class="intro">
+      <div class="container">
+        <span class="intro__subject">E-course platform</span>
+        <div class="intro__heading heading">
+          <h2 class="heading__title">Learning and teaching online, made easy.</h2>
+          <p class="heading__description">Practice your English and learn new things with the platform.</p>
+        </div>
+        <a class="button" href="#">About platform</a>
+        <dl class="intro__statistics statistics">
+          <div class="statistics__wrapper">
+            <dt class="statistics__number">600<span>&#43;</span></dt>
+            <dd class="statistics__text">Popular words</dd>
+          </div>
+          <div class="statistics__wrapper">
+            <dt class="statistics__number">2<span>&#43;</span></dt>
+            <dd class="statistics__text">Mini-games</dd>
+          </div>
+        </dl>
+        <div class="intro__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/intro-boy-desktop.png 1x, img/content/intro-boy-desktop@2x.png 2x" width="933" height="601">
+            <img src="img/content/intro-boy-mobile.png" srcset="img/content/intro-boy-mobile@2x.png 2x" width="355" height="288" alt="Boy with book and plant in pot.">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="games">
+      <div class="container">
+        <div class="games__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/playing-girl-desktop.png 1x, img/content/playing-girl-desktop@2x.png 2x" width="580" height="445">
+            <img src="img/content/playing-girl-mobile.png" srcset="img/content/playing-girl-mobile@2x.png 2x" width="335" height="230" alt="Girl with tablet.">
+          </picture>
+        </div>
+        <div class="games__heading heading">
+          <h2 class="heading__title">Learn a language in a playful way</h2>
+          <p class="heading__description">Make learning words more fun with mini-games</p>
+        </div>
+        <div class="games__preview preview">
+          <a class="preview__sprint" href="#">
+            <img src="img/content/sprint-image.svg" width="131" height="106" alt="Pink sneakers.">
+            <span>Sprint &rarr;</span>
+          </a>
+          <a class="preview__audio" href="#">
+            <img src="img/content/audio-image.svg" width="91" height="106" alt="Turquoise megaphone.">
+            <span>Audio-call &rarr;</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="vocabulary">
+      <div class="container">
+        <div class="vocabulary__heading heading">
+          <h2 class="heading__title">Increase your vocabulary</h2>
+          <p class="heading__description">Traditional and new effective approaches to word study</p>
+        </div>
+        <a class="button" href="#">Textbook &rarr;</a>
+        <div class="vocabulary__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/learning-girl-desktop.png 1x, img/content/learning-girl-desktop@2x.png 2x" width="580" height="474">
+            <img src="img/content/learning-girl-mobile.png" srcset="img/content/learning-girl-mobile@2x.png 2x" width="335" height="260" alt="Girl with books.">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="progress">
+      <div class="container">
+        <div class="progress__image">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/couple-desktop.png 1x, img/content/couple-desktop@2x.png 2x" width="680" height="409">
+            <img src="img/content/couple-mobile.png" srcset="img/content/couple-mobile@2x.png 2x" width="335" height="230" alt="Girl with books.">
+          </picture>
+        </div>
+        <div class="progress__heading heading">
+          <h2 class="heading__title">Watch your progress every day</h2>
+          <p class="heading__description">Save statistics on your achievements, words learned, and mistakes</p>
+        </div>
+        <a class="button" href="#">Statistics &rarr;</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <nav class="footer__navigation main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#" aria-current="page">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Textbook</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Statistics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Sprint</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Audio-call</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__developers">
+          <li>Alex</li>
+          <li>Gabriel</li>
+          <li>Marcus</li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GitHub." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GlobalTalk." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#globaltalk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Youtube." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">©2023 GlobalTalk. Project for GlobalTalk.</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

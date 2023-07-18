@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/heligie/global-talk#readme",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
     "del": "^6.0.0",
@@ -27,9 +28,14 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
-    "postcss-csso": "^6.0.1"
+    "postcss-csso": "^6.0.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
     "start": "gulp"
   },
@@ -39,6 +45,14 @@
     "not ie <= 11",
     "not op_mini all",
     "not < 0.25%"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "^16"
