@@ -1,0 +1,31 @@
+.main-menu {
+  font-size: 16px;
+  line-height: 16px;
+
+  &--medium {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+.main-menu__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  gap: 16px;
+}
+
+.main-menu__link {
+  color: $grey;
+
+  &--current {
+    color: $cyan-dark;
+  }
+
+  &--dropdown {
+    display: none;
+  }
+}

@@ -1,0 +1,31 @@
+.heading__title {
+  margin: 0 0 12px 0;
+
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $ff-dela;
+  max-width: 335px;
+
+  &--large {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.heading__description {
+  margin: 0;
+
+  color: $grey;
+  max-width: 335px;
+}
+
+.heading__subject {
+  display: block;
+  margin: 0 0 8px 0;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  color: $cyan-dark;
+  text-transform: uppercase;
+}

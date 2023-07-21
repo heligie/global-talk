@@ -1,0 +1,25 @@
+.intro {
+  padding: 40px 0 20px 0;
+
+  text-align: center;
+}
+
+.intro__wrapper {
+  display: grid;
+
+  gap: 20px;
+  justify-items: center;
+}
+
+.intro__image {
+  position: relative;
+
+  min-width: 335px;
+  min-height: 288px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

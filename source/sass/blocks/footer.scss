@@ -1,0 +1,47 @@
+.footer {
+  padding: 40px 0;
+}
+
+.footer__top {
+  display: grid;
+  align-items: start;
+  padding: 0 20px 20px 20px;
+
+  border-bottom: 1px solid $grey-medium;
+
+  gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer__developers {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-size: 12px;
+  line-height: 12px;
+  color: $grey;
+
+  gap: 16px;
+}
+
+.footer__bottom {
+  display: grid;
+  justify-content: center;
+  padding: 20px 0 0 0;
+
+  gap: 20px;
+}
+
+.footer__social {
+  justify-content: center;
+}
+
+.footer__copyright {
+  display: block;
+
+  font-size: 10px;
+  line-height: 10px;
+  color: $grey;
+}

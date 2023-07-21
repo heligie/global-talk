@@ -1,0 +1,57 @@
+.toolbar {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.toolbar__user {
+  position: relative;
+
+  display: block;
+  width: max-content;
+  margin-right: 14px;
+
+  color: $grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 6px);
+
+    width: 8px;
+    height: 5px;
+
+    background-image: url("../../img/svg/tick.svg");
+    background-repeat: no-repeat;
+    transform: translateY(-50%);
+  }
+}
+
+.toolbar__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 17px;
+  color: $cyan-dark;
+
+  background-color: $onahau;
+  border-radius: 50%;
+}
+
+.toolbar__name {
+  display: none;
+}
+
+.toolbar__link {
+  display: none;
+
+  font-weight: 700;
+  color: $color-black;
+}

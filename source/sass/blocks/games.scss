@@ -1,0 +1,31 @@
+.games {
+  padding: 40px 0 40px 0;
+
+  text-align: center;
+
+  background-color: $color-white;
+}
+
+.games__wrapper {
+  display: grid;
+
+  gap: 20px;
+  justify-items: center;
+}
+
+.games__image {
+  position: relative;
+
+  min-width: 335px;
+  min-height: 230px;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.games__preview {
+  margin-top: 33px;
+}

@@ -15,11 +15,22 @@ body {
   min-height: 100%;
   margin: 0;
 
+  font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   font-family: $ff-montserrat;
+
+  background-color: $grey-light;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  display: block;
 }
