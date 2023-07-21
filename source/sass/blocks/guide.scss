@@ -1,0 +1,34 @@
+.guide__wrapper {
+  position: relative;
+
+  &:nth-child(odd) {
+    background-color: $color-white;
+  }
+
+  &--cropped {
+    .guide__content {
+      padding: 40px 0 268px 0;
+    }
+
+    .guide__image {
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+.guide__content {
+  display: grid;
+  padding: 290px 0 40px 0;
+
+  gap: 20px;
+  justify-items: center;
+}
+
+.guide__image {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
