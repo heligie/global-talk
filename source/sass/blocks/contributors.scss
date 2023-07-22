@@ -1,5 +1,5 @@
 .contributors {
-  padding: 20px 0 0 0;
+  padding: 20px 0 40px 0;
 }
 
 .contributors__list {
@@ -17,10 +17,7 @@
   display: grid;
   padding: 20px;
 
-  background-color: $color-white;
-  border-radius: 14px;
-  box-shadow: 0 22px 45px -11px rgba($livid-brown, 0.078);
-
+  @include box-primary;
   justify-items: center;
   row-gap: 4px;
 }

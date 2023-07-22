@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Learn about our development team makes to solve design and business challenges, on this page.">
+  <meta name="description" content="The Audio-Call training helps you to figure out a new set of vocabulary. Focusing on that goal is an excellent way to improve your listening skills.">
   <meta name="keywords" content="mini-games, learning English, English vocabulary">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GlobalTalk: About</title>
+  <title>GlobalTalk: Audio-call Game</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
@@ -44,7 +44,7 @@
                   <a class="main-menu__link" href="sprint.html">Sprint</a>
                 </li>
                 <li class="main-menu__item">
-                  <a class="main-menu__link" href="audiocall.html">Audio-call</a>
+                  <a class="main-menu__link" href="audiocall.html" aria-current="page">Audio-call</a>
                 </li>
               </ul>
             </li>
@@ -65,38 +65,67 @@
     </div>
   </header>
   <main>
-    <section class="contributors">
-      <h1 class="visually-hidden">The creators of the Global Talk e-course platform.</h1>
+    <section class="game">
+      <h1 class="visually-hidden">Audio-call Game.</h1>
       <div class="container">
-        <ul class="contributors__list">
-          <li class="contributors__item">
-            <div class="contributors__avatar">
-              <img src="img/content/avatar-alex.svg" width="60" height="60" alt="Contributor's avatar.">
+        <div class="game__wrapper">
+          <div class="game__image">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/content/sprint-levels-desktop.png 1x, img/content/sprint-levels-desktop@2x.png 2x" width="250" height="400">
+              <img src="img/content/audio-levels-mobile.svg" width="60" height="60" alt="Turquoise megaphone.">
+            </picture>
+          </div>
+          <div class="game__content">
+            <div class="game__heading heading">
+              <h2 class="heading__title">Audio-Call <span class="badge badge--primary">Speed task</span></h2>
+              <p class="heading__description">The Audio-Call training develops vocabulary and improves listening comprehension.</p>
             </div>
-            <div class="contributors__heading heading">
-              <h2 class="heading__title">Alex <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--secondary">GitHub</span></a></h2>
-              <p class="heading__description">Made design, api queries, statistics, sprint game, did some layout and supervised development.</p>
-            </div>
-          </li>
-          <li class="contributors__item">
-            <div class="contributors__avatar">
-              <img src="img/content/avatar-gabriel.svg" width="60" height="60" alt="Contributor's avatar.">
-            </div>
-            <div class="contributors__heading heading">
-              <h2 class="heading__title">Gabriel <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--secondary">GitHub</span></a></h2>
-              <p class="heading__description">Authorization / registration module, Audio Challenge game, collection of statistics, routing, typing of the studied words.</p>
-            </div>
-          </li>
-          <li class="contributors__item">
-            <div class="contributors__avatar">
-              <img src="img/content/avatar-marcus.svg" width="60" height="60" alt="Contributor's avatar.">
-            </div>
-            <div class="contributors__heading heading">
-              <h2 class="heading__title">Marcus <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--secondary">GitHub</span></a></h2>
-              <p class="heading__description">Made the application home page, e-textbook, layout, and adaptive.</p>
-            </div>
-          </li>
-        </ul>
+            <form class="game__form levels" action="/" method="get">
+              <fieldset class="levels__fieldset">
+                <legend class="levels__caption">Choose a level:</legend>
+                <ul class="levels__list">
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="a1">
+                      <span class="levels__control levels__control--green">A1</span>
+                    </label>
+                  </li>
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="a2">
+                      <span class="levels__control levels__control--yellow">A2</span>
+                    </label>
+                  </li>
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="b1" checked>
+                      <span class="levels__control levels__control--tomato">B1</span>
+                    </label>
+                  </li>
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="b2">
+                      <span class="levels__control levels__control--red">B2</span>
+                    </label>
+                  </li>
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="c1">
+                      <span class="levels__control levels__control--purple">C1</span>
+                    </label>
+                  </li>
+                  <li class="levels__item">
+                    <label class="levels__label">
+                      <input class="levels__input visually-hidden" type="radio" name="level" value="c2">
+                      <span class="levels__control levels__control--turquoise">C2</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="levels__button button button--secondary" type="submit">Get started</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -118,7 +147,7 @@
               <a class="main-menu__link" href="sprint.html">Sprint</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="audiocall.html">Audio-call</a>
+              <a class="main-menu__link" href="audiocall.html" aria-current="page">Audio-call</a>
             </li>
           </ul>
         </nav>

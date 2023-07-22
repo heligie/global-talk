@@ -2,6 +2,7 @@
 // ------------------------
 
 @import "global/fonts";
+@import "global/mixin";
 @import "global/utils";
 @import "global/variables";
 @import "global/reboot";
@@ -14,10 +15,12 @@
 @import "blocks/container";
 @import "blocks/contributors";
 @import "blocks/footer";
+@import "blocks/game";
 @import "blocks/guide";
 @import "blocks/header";
 @import "blocks/heading";
 @import "blocks/intro";
+@import "blocks/levels";
 @import "blocks/main-menu";
 @import "blocks/preview";
 @import "blocks/social";

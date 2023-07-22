@@ -8,11 +8,19 @@
   font-size: 14px;
   line-height: 14px;
 
+  border: none;
   border-radius: 100px;
+  cursor: pointer;
 
   &--primary {
     color: $cyan-dark;
 
     background-color: $cyan-light;
+  }
+
+  &--secondary {
+    color: $color-white;
+
+    background-color: $cyan-dark;
   }
 }

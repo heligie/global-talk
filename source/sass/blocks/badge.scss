@@ -10,7 +10,13 @@
 
   border-radius: 6px;
 
-  &--github {
+  &--primary {
+    color: $cyan-dark;
+
+    background-color: $cyan-light;
+  }
+
+  &--secondary {
     color: $color-white;
 
     background-color: $cyan-dark;

@@ -1,0 +1,16 @@
+@mixin box-primary {
+  background-color: $color-white;
+  border-radius: 14px;
+  box-shadow: 0 22px 45px -11px rgba($livid-brown, 0.08);
+}
+
+@mixin box-secondary {
+  background-color: $color-white;
+  border-radius: 14px;
+  box-shadow: 0 11px 11px 0 rgba($livid-brown, 0.04),
+    0 11px 68px 0 rgba($livid-brown, 0.04),
+    0 68px 68px 0 rgba($livid-brown, 0.04),
+    0 91px 91px 0 rgba($livid-brown, 0.04),
+    0 183px 183px 0 rgba($livid-brown, 0.12),
+    0 343px 343px 0 rgba($livid-brown, 0.08);
+}

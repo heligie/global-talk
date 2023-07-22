@@ -1,0 +1,140 @@
+.levels {
+  display: grid;
+
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.levels__fieldset {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+.levels__caption {
+  color: $grey;
+}
+
+.levels__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 8px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  column-gap: 6px;
+
+  row-gap: 10px;
+}
+
+.levels__label {
+  cursor: pointer;
+}
+
+.levels__input {
+  &[type="radio"]:checked + .levels__control {
+    color: $color-white;
+
+    &--green {
+      background-color: $oxley;
+    }
+
+    &--yellow {
+      background-color: $sundance;
+    }
+
+    &--tomato {
+      background-color: $dark-coral;
+    }
+
+    &--red {
+      background-color: $apple-blossom;
+    }
+
+    &--purple {
+      background-color: $violet-blue;
+    }
+
+    &--turquoise {
+      background-color: $cadet-blue;
+    }
+  }
+}
+
+.levels__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 50%;
+
+  &--green {
+    color: $oxley;
+
+    border-color: $oxley;
+
+    &:hover {
+      background-color: rgba($oxley, 0.1);
+    }
+  }
+
+  &--yellow {
+    color: $sundance;
+
+    border-color: $sundance;
+
+    &:hover {
+      background-color: rgba($sundance, 0.1);
+    }
+  }
+
+  &--tomato {
+    color: $dark-coral;
+
+    border-color: $dark-coral;
+
+    &:hover {
+      background-color: rgba($dark-coral, 0.1);
+    }
+  }
+
+  &--red {
+    color: $apple-blossom;
+
+    border-color: $apple-blossom;
+
+    &:hover {
+      background-color: rgba($apple-blossom, 0.1);
+    }
+  }
+
+  &--purple {
+    color: $violet-blue;
+
+    border-color: $violet-blue;
+
+    &:hover {
+      background-color: rgba($violet-blue, 0.1);
+    }
+  }
+
+  &--turquoise {
+    color: $cadet-blue;
+
+    border-color: $cadet-blue;
+
+    &:hover {
+      background-color: rgba($cadet-blue, 0.1);
+    }
+  }
+}
