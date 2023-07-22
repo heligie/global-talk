@@ -1,0 +1,26 @@
+.contributors {
+  padding: 20px 0 0 0;
+}
+
+.contributors__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  justify-items: center;
+  row-gap: 20px;
+}
+
+.contributors__item {
+  display: grid;
+  padding: 20px;
+
+  background-color: $color-white;
+  border-radius: 14px;
+  box-shadow: 0 22px 45px -11px rgba($livid-brown, 0.078);
+
+  justify-items: center;
+  row-gap: 4px;
+}

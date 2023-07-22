@@ -1,0 +1,18 @@
+.badge {
+  display: block;
+  padding: 4px 8px;
+
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  font-family: $ff-montserrat;
+  text-transform: lowercase;
+
+  border-radius: 6px;
+
+  &--github {
+    color: $color-white;
+
+    background-color: $cyan-dark;
+  }
+}

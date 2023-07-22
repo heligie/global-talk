@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Practice your English and learn new things with the platform. Make learning words more fun with mini-games.">
+  <meta name="keywords" content="mini-games, learning English, English vocabulary">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalTalk: About</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <button class="header__toggle" type="button" aria-label="To open and close the side nav.">
+          <span></span>
+        </button>
+        <a class="header__logo" href="index.html" aria-label="Back to the homepage.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/logo.svg" width="140" height="17">
+            <img src="img/content/logo-mobile.svg" width="100" height="14" alt="GlobalTalk logotype.">
+          </picture>
+        </a>
+        <nav class="header__navigation main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--current" href="index.html">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Textbook</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Statistics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--dropdown" href="#">Games</a>
+              <ul class="main-menu__list main-menu__list--dropdown">
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="#">Sprint</a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="#">Audio-call</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__toolbar toolbar">
+          <li class="toolbar__item">
+            <a class="toolbar__user" href="#">
+              <div class="toolbar__avatar">A</div>
+              <span class="toolbar__name">Alex</span>
+            </a>
+          </li>
+          <li class="toolbar__item">
+            <a class="toolbar__link" href="#">Sign Out &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="contributors">
+      <h1 class="visually-hidden">The creators of the Global Talk e-course platform.</h1>
+      <div class="container">
+        <ul class="contributors__list">
+          <li class="contributors__item">
+            <div class="contributors__avatar">
+              <img src="img/content/avatar-alex.svg" width="60" height="60" alt="Contributor's avatar.">
+            </div>
+            <div class="contributors__heading heading">
+              <h2 class="heading__title">Alex <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--github">GitHub</span></a></h2>
+              <p class="heading__description">Made design, api queries, statistics, sprint game, did some layout and supervised development.</p>
+            </div>
+          </li>
+          <li class="contributors__item">
+            <div class="contributors__avatar">
+              <img src="img/content/avatar-gabriel.svg" width="60" height="60" alt="Contributor's avatar.">
+            </div>
+            <div class="contributors__heading heading">
+              <h2 class="heading__title">Gabriel <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--github">GitHub</span></a></h2>
+              <p class="heading__description">Authorization / registration module, Audio Challenge game, collection of statistics, routing, typing of the studied words.</p>
+            </div>
+          </li>
+          <li class="contributors__item">
+            <div class="contributors__avatar">
+              <img src="img/content/avatar-marcus.svg" width="60" height="60" alt="Contributor's avatar.">
+            </div>
+            <div class="contributors__heading heading">
+              <h2 class="heading__title">Marcus <a href="#" aria-label="Contributor's GitHub."><span class="badge badge--github">GitHub</span></a></h2>
+              <p class="heading__description">Made the application home page, e-textbook, layout, and adaptive.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <nav class="footer__navigation main-menu main-menu--medium">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Textbook</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Statistics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Sprint</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Audio-call</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__developers">
+          <li>Alex</li>
+          <li>Gabriel</li>
+          <li>Marcus</li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GitHub." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GlobalTalk." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#globaltalk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Youtube." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">©2023 GlobalTalk. Project for GlobalTalk.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/burger-menu.min.js"></script>
+</body>
+</html>

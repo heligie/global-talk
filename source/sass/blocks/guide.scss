@@ -13,6 +13,8 @@
     .guide__image {
       top: auto;
       bottom: 0;
+
+      max-height: 260px;
     }
   }
 }
@@ -29,6 +31,8 @@
   position: absolute;
   top: 40px;
   left: 50%;
+
+  max-height: 230px;
 
   transform: translateX(-50%);
 }
