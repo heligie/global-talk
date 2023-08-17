@@ -1,0 +1,68 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  column-gap: 20px;
+
+  row-gap: 5px;
+
+  &--underline {
+    button.is-active {
+      border-bottom: 1.5px solid $color-black;
+    }
+  }
+
+  &--line {
+    button {
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(100% + 10px);
+
+      width: 1px;
+      height: 100%;
+
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.tabs__control {
+  display: flex;
+  align-items: center;
+  padding: 0 0 10px 0;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-family: $ff-dela;
+  color: $grey;
+  column-gap: 7px;
+
+  background-color: $transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    fill: $grey-icon;
+  }
+
+  &.is-active {
+    color: $color-black;
+
+    svg {
+      fill: $color-black;
+    }
+  }
+}

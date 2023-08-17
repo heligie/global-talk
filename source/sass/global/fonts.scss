@@ -10,6 +10,16 @@
 
 @font-face {
   font-style: normal;
+  font-weight: 500;
+  font-family: "Montserrat";
+
+  font-display: swap;
+  src: url("../fonts/montserrat/montserratmedium.woff2") format("woff2"),
+    url("../fonts/montserrat/montserratmedium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
   font-weight: 600;
   font-family: "Montserrat";
 

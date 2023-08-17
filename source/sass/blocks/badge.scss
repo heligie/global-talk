@@ -1,5 +1,7 @@
 .badge {
   display: block;
+  min-width: max-content;
+  height: max-content;
   padding: 4px 8px;
 
   font-weight: 600;
@@ -7,6 +9,7 @@
   line-height: 14px;
   font-family: $ff-montserrat;
   text-transform: lowercase;
+  letter-spacing: -0.4px;
 
   border-radius: 6px;
 
@@ -20,5 +23,56 @@
     color: $color-white;
 
     background-color: $cyan-dark;
+  }
+
+  &--easy {
+    padding: 3px 6px;
+
+    color: $oxley;
+    text-transform: none;
+
+    background-color: rgba($oxley, 0.3);
+
+    .is-active & {
+      color: $color-white;
+
+      background-color: $oxley;
+    }
+  }
+
+  &--medium {
+    padding: 3px 6px;
+
+    color: $sundance;
+    text-transform: none;
+
+    background-color: rgba($sundance, 0.3);
+
+    .is-active & {
+      color: $color-white;
+
+      background-color: $sundance;
+    }
+  }
+
+  &--hard {
+    padding: 3px 6px;
+
+    color: $dark-coral;
+    text-transform: none;
+
+    background-color: rgba($dark-coral, 0.3);
+
+    .is-active & {
+      color: $color-white;
+
+      background-color: $dark-coral;
+    }
+  }
+
+  &--compound {
+    color: $color-white;
+
+    background-color: $dark-coral;
   }
 }

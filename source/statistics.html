@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="With GlobalTalk you can organize and measure your progress towards learning new words.">
+  <meta name="keywords" content="mini-games, learning English, English vocabulary">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalTalk: Statistics</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <button class="header__toggle" type="button" aria-label="To open and close the side nav.">
+          <span></span>
+        </button>
+        <a class="header__logo" href="index.html" aria-label="Back to the homepage.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/content/logo.svg" width="140" height="17">
+            <img src="img/content/logo-mobile.svg" width="100" height="14" alt="GlobalTalk logotype.">
+          </picture>
+        </a>
+        <nav class="header__navigation main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--current" href="index.html">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="textbook.html">Textbook</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="statistics.html" aria-current="page">Statistics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link main-menu__link--dropdown" href="#">Games</a>
+              <ul class="main-menu__list main-menu__list--dropdown">
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="sprint.html">Sprint</a>
+                </li>
+                <li class="main-menu__item">
+                  <a class="main-menu__link" href="audiocall.html">Audio-call</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header__toolbar toolbar">
+          <li class="toolbar__item">
+            <a class="toolbar__user" href="#">
+              <div class="toolbar__avatar">A</div>
+              <span class="toolbar__name">Alex</span>
+            </a>
+          </li>
+          <li class="toolbar__item">
+            <a class="toolbar__link" href="#">Sign Out &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="statistics" data-tabs="parent">
+      <h1 class="visually-hidden">Analysis of your statistics.</h1>
+      <ul class="statistics__tabs tabs tabs--underline" data-tabs="controls">
+        <li class="tabs__item">
+          <button class="tabs__control is-active" data-tabs="control">For the day</button>
+        </li>
+        <li class="tabs__item">
+          <button class="tabs__control" data-tabs="control">For all the time</button>
+        </li>
+      </ul>
+      <div class="statistics__content" data-tabs="content">
+        <div class="statistics__element is-active" data-tabs="element">
+          <div class="statistics__activity">
+            <div class="statistics__image">
+              <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
+            </div>
+            <div class="statistics__heading heading">
+              <h2 class="heading__title">Today's statistics</h2>
+              <p class="heading__description">Your statistics on all activities</p>
+            </div>
+            <dl class="statistics__stats stats">
+              <div class="stats__wrapper">
+                <dt class="stats__number">0<span>&#43;</span></dt>
+                <dd class="stats__text">Words studied</dd>
+              </div>
+              <div class="stats__wrapper">
+                <dt class="stats__number">0<span>&#37;</span></dt>
+                <dd class="stats__text">Correct answers</dd>
+              </div>
+            </dl>
+            <div class="statistics__games">
+              <div class="statistics__game">
+                <div class="statistics__game-image">
+                  <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
+                </div>
+                <div class="statistics__game-content">
+                  <h3 class="statistics__title">Sprint<span class="badge badge--primary">Speed task</span></h3>
+                  <ul class="statistics__list">
+                    <li class="statistics__item"><span>0</span> words studied</li>
+                    <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
+                    <li class="statistics__item"><span>0</span> best series of correct answers</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="statistics__game">
+                <div class="statistics__game-image">
+                  <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
+                </div>
+                <div class="statistics__game-content">
+                  <h3 class="statistics__title">Audio-Call<span class="badge badge--primary">Audition task</span></h3>
+                  <ul class="statistics__list">
+                    <li class="statistics__item"><span>0</span> words studied</li>
+                    <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
+                    <li class="statistics__item"><span>0</span> best series of correct answers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics__chart">
+            <canvas role="img" id="canvas" width="300" height="156"></canvas>
+          </div>
+        </div>
+        <div class="statistics__element" data-tabs="element">
+          <div class="statistics__activity">
+            <div class="statistics__image">
+              <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
+            </div>
+            <div class="statistics__heading heading">
+              <h2 class="heading__title">All-time statistics</h2>
+              <p class="heading__description">Your statistics on all activities</p>
+            </div>
+            <dl class="statistics__stats stats">
+              <div class="stats__wrapper">
+                <dt class="stats__number">10<span>&#43;</span></dt>
+                <dd class="stats__text">Words studied</dd>
+              </div>
+              <div class="stats__wrapper">
+                <dt class="stats__number">43<span>&#37;</span></dt>
+                <dd class="stats__text">Correct answers</dd>
+              </div>
+            </dl>
+            <div class="statistics__games">
+              <div class="statistics__game">
+                <div class="statistics__game-image">
+                  <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
+                </div>
+                <div class="statistics__game-content">
+                  <h3 class="statistics__title">Sprint <span class="badge badge--primary">Speed task</span></h3>
+                  <ul class="statistics__list">
+                    <li class="statistics__item"><span>5</span> words studied</li>
+                    <li class="statistics__item"><span>90<span>&#37;</span></span> correct answers</li>
+                    <li class="statistics__item"><span>7</span> best series of correct answers</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="statistics__game">
+                <div class="statistics__game-image">
+                  <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
+                </div>
+                <div class="statistics__game-content">
+                  <h3 class="statistics__title">Audio-Call <span class="badge badge--primary">Audition task</span></h3>
+                  <ul class="statistics__list">
+                    <li class="statistics__item"><span>8</span> words studied</li>
+                    <li class="statistics__item"><span>87<span>&#37;</span></span> correct answers</li>
+                    <li class="statistics__item"><span>9</span> best series of correct answers</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics__chart">
+            <canvas role="img" id="canvas" width="300" height="156"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <nav class="footer__navigation main-menu main-menu--medium">
+          <ul class="main-menu__list">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="index.html">Home</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="textbook.html">Textbook</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="statistics.html" aria-current="page">Statistics</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="sprint.html">Sprint</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="audiocall.html">Audio-call</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__developers">
+          <li>Alex</li>
+          <li>Gabriel</li>
+          <li>Marcus</li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GitHub." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="GlobalTalk." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#globaltalk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Youtube." target="_blank" rel="nofollow noopener">
+              <svg width="30" height="24" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <span class="footer__copyright">©2023 GlobalTalk. Project for GlobalTalk.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/burger-menu.min.js"></script>
+</body>
+</html>

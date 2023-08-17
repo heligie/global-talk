@@ -23,4 +23,16 @@
 
     background-color: $cyan-dark;
   }
+
+  &--learned {
+    color: $color-white;
+
+    background-color: $oxley;
+  }
+
+  &--dictionary {
+    color: $color-white;
+
+    background-color: $dark-coral;
+  }
 }

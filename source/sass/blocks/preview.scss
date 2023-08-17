@@ -1,10 +1,10 @@
 .preview {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   align-items: start;
 
   column-gap: 36px;
 
+  grid-template-columns: 114px 172px;
   row-gap: 40px;
 }
 
@@ -22,8 +22,6 @@
   justify-items: center;
 
   &--sprint {
-    min-width: 114px;
-
     color: $pink-dark;
 
     background-color: $pink-light;
@@ -34,8 +32,6 @@
   }
 
   &--audio {
-    min-width: 172px;
-
     color: $cyan-dark;
 
     background-color: $cyan-light;
@@ -49,6 +45,7 @@
     display: block;
     max-width: 100px;
 
+    font-weight: 700;
     line-height: 14px;
   }
 
@@ -65,5 +62,30 @@
 
       transition: transform 0.3s ease;
     }
+  }
+}
+
+.preview--reduced {
+  column-gap: 8px;
+
+  grid-template-columns: 114px 140px;
+  row-gap: 10px;
+
+  .preview__link {
+    max-width: 140px;
+    min-height: 34px;
+    margin: 0;
+    padding: 10px 10px 10px 42px;
+    overflow: clip;
+  }
+
+  img {
+    top: -2px;
+    left: 17px;
+  }
+
+  span {
+    font-size: 13px;
+    line-height: 13px;
   }
 }

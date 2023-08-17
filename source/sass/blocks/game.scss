@@ -1,9 +1,11 @@
 .game {
-  padding: 40px 0 40px 0;
+  padding: 40px 20px;
 }
 
 .game__wrapper {
   display: grid;
+  max-width: 535px;
+  margin: 0 auto;
   padding: 20px;
 
   @include box-primary;

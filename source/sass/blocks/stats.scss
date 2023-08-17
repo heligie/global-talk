@@ -30,6 +30,7 @@
 
   font-size: 20px;
   font-family: $ff-dela;
+  text-align: center;
 
   svg {
     fill: $cyan-dark;
@@ -47,4 +48,5 @@
   font-size: 12px;
   line-height: 17px;
   color: $grey-dark;
+  text-transform: lowercase;
 }

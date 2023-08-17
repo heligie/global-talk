@@ -1,0 +1,82 @@
+.vocabulary {
+  padding: 20px 0 40px 0;
+}
+
+.vocabulary__wrapper {
+  overflow: hidden;
+}
+
+.vocabulary__header {
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+
+  @include box-primary;
+  row-gap: 20px;
+}
+
+.vocabulary__meta {
+  display: flex;
+  align-items: center;
+
+  column-gap: 8px;
+}
+
+.vocabulary__settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 31px;
+  height: 31px;
+  padding: 7px;
+
+  background-color: $grey-light;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+
+  svg {
+    fill: $grey-icon;
+  }
+}
+
+.vocabulary__filter {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 655px;
+  margin: 30px auto;
+  padding: 0 20px 0 20px;
+  overflow-x: scroll;
+
+  list-style: none;
+  font-size: 18px;
+  line-height: 18px;
+  column-gap: 26px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.vocabulary__level {
+  display: flex;
+  padding-bottom: 11px;
+
+  font-family: $ff-dela;
+  color: $grey;
+  column-gap: 8px;
+
+  cursor: pointer;
+
+  &.is-active {
+    color: $color-black;
+
+    border-bottom: 2px solid $color-black;
+  }
+}
+
+.vocabulary__element {
+  display: grid;
+  gap: 20px;
+}

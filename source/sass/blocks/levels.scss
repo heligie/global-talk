@@ -14,6 +14,8 @@
 }
 
 .levels__caption {
+  padding: 0;
+
   color: $grey;
 }
 
@@ -84,7 +86,7 @@
     border-color: $oxley;
 
     &:hover {
-      background-color: rgba($oxley, 0.1);
+      background-color: rgba($oxley, 0.3);
     }
   }
 
@@ -94,7 +96,7 @@
     border-color: $sundance;
 
     &:hover {
-      background-color: rgba($sundance, 0.1);
+      background-color: rgba($sundance, 0.3);
     }
   }
 
@@ -104,7 +106,7 @@
     border-color: $dark-coral;
 
     &:hover {
-      background-color: rgba($dark-coral, 0.1);
+      background-color: rgba($dark-coral, 0.3);
     }
   }
 
@@ -114,7 +116,7 @@
     border-color: $apple-blossom;
 
     &:hover {
-      background-color: rgba($apple-blossom, 0.1);
+      background-color: rgba($apple-blossom, 0.3);
     }
   }
 
@@ -124,7 +126,7 @@
     border-color: $violet-blue;
 
     &:hover {
-      background-color: rgba($violet-blue, 0.1);
+      background-color: rgba($violet-blue, 0.3);
     }
   }
 
@@ -134,7 +136,7 @@
     border-color: $cadet-blue;
 
     &:hover {
-      background-color: rgba($cadet-blue, 0.1);
+      background-color: rgba($cadet-blue, 0.3);
     }
   }
 }
