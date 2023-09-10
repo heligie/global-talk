@@ -20,6 +20,7 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^1.1.0",
+    "gulp-html-bemlinter": "^2.1.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "^1.2.1",
@@ -28,6 +29,7 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
+    "gulp-w3c-html-validator": "^5.1.3",
     "postcss-csso": "^6.0.1",
     "stylelint": "^13.13.1",
     "stylelint-config-htmlacademy": "^0.1.11"
@@ -35,7 +37,9 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "lint": "npm run editorconfig && npm run stylelint",
+    "w3c": "gulp validateMarkup --silent",
+    "bemlinter": "gulp lintBem --silent",
+    "lint": "npm run editorconfig && npm run stylelint && npm run w3c && npm run bemlinter",
     "build": "gulp build",
     "start": "gulp"
   },
