@@ -1,12 +1,47 @@
 .intro {
   padding: 40px 0 20px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 95px 0 115px 0;
+  }
+
+  @media (min-width: $vp-1280) {
+    padding: 95px 0 30px 0;
+  }
 }
 
 .intro__wrapper {
   display: grid;
+  justify-content: center;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    align-items: start;
+
+    grid-template-columns: repeat(2, 335px);
+  }
+
+  @media (min-width: $vp-1280) {
+    justify-content: start;
+
+    grid-template-columns: 485px 1fr;
+  }
+}
+
+.intro__content {
+  display: grid;
 
   gap: 20px;
   justify-items: center;
+
+  @media (min-width: $vp-768) {
+    justify-items: start;
+  }
+
+  @media (min-width: $vp-1280) {
+    gap: 32px;
+  }
 }
 
 .intro__image {
@@ -19,5 +54,9 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+
+  @media (min-width: $vp-1280) {
+    min-height: 600px;
   }
 }

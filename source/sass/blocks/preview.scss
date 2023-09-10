@@ -6,6 +6,10 @@
 
   grid-template-columns: 114px 172px;
   row-gap: 40px;
+
+  @media (min-width: $vp-1280) {
+    grid-template-columns: 129px 172px;
+  }
 }
 
 .preview__link {
@@ -43,7 +47,6 @@
 
   span {
     display: block;
-    max-width: 100px;
 
     font-weight: 700;
     line-height: 14px;
@@ -63,6 +66,15 @@
       transition: transform 0.3s ease;
     }
   }
+
+  @media (min-width: $vp-1280) {
+    padding: 86px 22px 14px 22px;
+
+    span {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
 }
 
 .preview--miniature {
@@ -72,7 +84,6 @@
   row-gap: 10px;
 
   .preview__link {
-    max-width: 140px;
     min-height: 34px;
     margin: 0;
     padding: 10px 10px 10px 42px;

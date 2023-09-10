@@ -1,38 +1,67 @@
 .guide__wrapper {
-  position: relative;
+  padding: 40px 0;
 
   &:nth-child(odd) {
     background-color: $color-white;
   }
 
   &--cropped {
-    .guide__content {
-      padding: 40px 0 268px 0;
-    }
+    padding: 40px 0 0 0;
 
     .guide__image {
-      top: auto;
-      bottom: 0;
-
       max-height: 260px;
     }
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 64px 0;
+
+    &--cropped {
+      padding: 26px 0 0 0;
+    }
+  }
+
+  @media (min-width: $vp-1280) {
+    &--cropped {
+      .guide__image {
+        max-height: 474px;
+      }
+    }
+  }
+}
+
+.guide__container {
+  display: grid;
+  justify-content: center;
+
+  gap: 20px;
+
+  @media (min-width: $vp-768) {
+    align-items: center;
+
+    grid-template-columns: repeat(2, auto);
   }
 }
 
 .guide__content {
   display: grid;
-  padding: 290px 0 40px 0;
 
   gap: 20px;
   justify-items: center;
+
+  @media (min-width: $vp-768) {
+    justify-items: start;
+  }
+
+  @media (min-width: $vp-1280) {
+    gap: 30px;
+  }
 }
 
 .guide__image {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-
   max-height: 230px;
 
-  transform: translateX(-50%);
+  @media (min-width: $vp-1280) {
+    max-height: 445px;
+  }
 }

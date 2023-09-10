@@ -42,8 +42,8 @@
 
 .vocabulary__filter {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 655px;
   margin: 30px auto;
   padding: 0 20px 0 20px;
@@ -74,9 +74,4 @@
 
     border-bottom: 2px solid $color-black;
   }
-}
-
-.vocabulary__element {
-  display: grid;
-  gap: 20px;
 }

@@ -10,6 +10,11 @@
 .stats__wrapper {
   position: relative;
 
+  display: grid;
+
+  justify-items: center;
+  row-gap: 3px;
+
   &:first-child {
     &::before {
       content: "";
@@ -26,8 +31,6 @@
 }
 
 .stats__number {
-  max-width: 100px;
-
   font-size: 20px;
   font-family: $ff-dela;
   text-align: center;
@@ -39,14 +42,27 @@
   span {
     color: $cyan-dark;
   }
+
+  @media (min-width: $vp-1280) {
+    font-size: 40px;
+
+    svg {
+      width: 24px;
+      height: 30px;
+    }
+  }
 }
 
 .stats__text {
-  max-width: 100px;
   margin: 0;
 
   font-size: 12px;
   line-height: 17px;
   color: $grey-dark;
   text-transform: lowercase;
+
+  @media (min-width: $vp-1280) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }

@@ -35,4 +35,12 @@
 
     background-color: $dark-coral;
   }
+
+  @media (min-width: $vp-1280) {
+    max-width: 175px;
+    padding: 14px 22px;
+
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

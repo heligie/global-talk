@@ -103,7 +103,7 @@
   justify-self: center;
 
   @media (min-width: $vp-768) {
-    margin: 8px 0 0 0;
+    margin: 6px 0 0 0;
   }
 
   @media (min-width: $vp-1280) {
@@ -138,7 +138,7 @@
 
     display: block;
     height: auto;
-    margin: 8px 0 0 0;
+    margin: 6px 0 0 0;
 
     .is-open & {
       position: relative;
