@@ -1,10 +1,47 @@
 .main-menu {
-  font-size: 16px;
-  line-height: 16px;
+  &--basic {
+    font-size: 16px;
+    line-height: 16px;
 
-  &--medium {
+    ul {
+      justify-content: center;
+
+      text-align: center;
+
+      gap: 32px;
+    }
+  }
+
+  &--optional {
     font-size: 12px;
     line-height: 12px;
+  }
+
+  @media (min-width: $vp-768) {
+    &--basic {
+      font-size: 14px;
+      line-height: 20px;
+
+      ul {
+        justify-content: start;
+
+        text-align: start;
+
+        gap: 16px;
+      }
+    }
+  }
+
+  @media (min-width: $vp-1280) {
+    &--basic {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &--optional {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -16,9 +53,29 @@
   list-style: none;
 
   gap: 16px;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &--dropdown {
+      position: absolute;
+      top: calc(100% + 15px);
+      z-index: 15;
+
+      display: none;
+      width: 215px;
+      padding: 20px;
+
+      @include box-secondary;
+      row-gap: 20px;
+    }
+  }
 }
 
 .main-menu__link {
+  display: block;
+
   color: $grey;
 
   &--current {
@@ -27,5 +84,28 @@
 
   &--dropdown {
     display: none;
+  }
+
+  @media (min-width: $vp-768) {
+    &--dropdown {
+      position: relative;
+
+      display: block;
+      margin-right: 14px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 54%;
+        left: calc(100% + 3px);
+
+        width: 8px;
+        height: 5px;
+
+        background-image: url("../../img/svg/tick.svg");
+        background-repeat: no-repeat;
+        transform: translateY(-50%);
+      }
+    }
   }
 }

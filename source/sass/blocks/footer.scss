@@ -11,6 +11,13 @@
 
   gap: 80px;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+
+  @media (min-width: $vp-768) {
+    padding: 0 0 20px 0;
+
+    grid-template-columns: 1fr 250px;
+  }
 }
 
 .footer__developers {
@@ -24,6 +31,18 @@
   color: $grey;
 
   gap: 16px;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-self: end;
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .footer__bottom {
@@ -32,6 +51,12 @@
   padding: 20px 0 0 0;
 
   gap: 20px;
+
+  @media (min-width: $vp-768) {
+    justify-content: space-between;
+
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 .footer__social {
@@ -40,8 +65,22 @@
 
 .footer__copyright {
   display: block;
+  max-width: 210px;
 
   font-size: 10px;
   line-height: 10px;
   color: $grey;
+
+  @media (min-width: $vp-768) {
+    margin-top: 7px;
+
+    text-align: end;
+  }
+
+  @media (min-width: $vp-1280) {
+    max-width: 250px;
+
+    font-size: 12px;
+    line-height: 12px;
+  }
 }

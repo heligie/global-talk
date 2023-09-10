@@ -1,16 +1,25 @@
 .header {
-  position: relative;
-
   padding: 9px 0;
 
-  border-top: 0.5px solid #a9a9a9;
+  border-top: 0.5px solid $grey-soft;
   border-bottom: 1px solid $grey-medium;
+
+  @media (min-width: $vp-768) {
+    padding: 24px 0;
+  }
 }
 
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+
+  column-gap: 30px;
+
+  grid-template-columns: auto 1fr auto;
+
+  @media (min-width: $vp-768) {
+    align-items: start;
+  }
 }
 
 .header__toggle {
@@ -82,10 +91,24 @@
       transform: rotate(135deg);
     }
   }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
 }
 
 .header__logo {
-  margin-left: 14px;
+  margin-left: 22px;
+
+  justify-self: center;
+
+  @media (min-width: $vp-768) {
+    margin: 8px 0 0 0;
+  }
+
+  @media (min-width: $vp-1280) {
+    margin: 10px 0 0 0;
+  }
 }
 
 .header__navigation {
@@ -95,7 +118,7 @@
 
   .is-open & {
     position: fixed;
-    top: 52px;
+    top: 53px;
     left: 0;
     z-index: 10;
 
@@ -107,12 +130,40 @@
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 
-    text-align: center;
-
     background-color: $grey-light;
+  }
 
-    ul {
-      gap: 32px;
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    display: block;
+    height: auto;
+    margin: 8px 0 0 0;
+
+    .is-open & {
+      position: relative;
+      top: 0;
+
+      height: auto;
+      padding: 0;
+      overflow-y: visible;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -15px;
+
+      display: block;
+      width: 1.5px;
+      height: 16px;
+
+      background-color: $grey-medium;
+    }
+  }
+
+  @media (min-width: $vp-1280) {
+    margin: 10px 0 0 0;
   }
 }

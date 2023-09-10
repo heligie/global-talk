@@ -1,18 +1,27 @@
 .toolbar {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  align-items: center;
 
-  list-style: none;
+  @media (min-width: $vp-768) {
+    column-gap: 24px;
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .toolbar__user {
   position: relative;
 
-  display: block;
+  display: flex;
+  align-items: center;
   width: max-content;
   margin-right: 14px;
 
   color: $grey;
+  column-gap: 10px;
 
   &::after {
     content: "";
@@ -27,6 +36,14 @@
     background-repeat: no-repeat;
     transform: translateY(-50%);
   }
+
+  @media (min-width: $vp-768) {
+    margin-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .toolbar__avatar {
@@ -37,16 +54,23 @@
   height: 33px;
 
   font-weight: 700;
-  font-size: 12px;
-  line-height: 17px;
   color: $cyan-dark;
 
   background-color: $onahau;
   border-radius: 50%;
+
+  @media (min-width: $vp-1280) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .toolbar__name {
   display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
 }
 
 .toolbar__link {
@@ -54,4 +78,8 @@
 
   font-weight: 700;
   color: $color-black;
+
+  @media (min-width: $vp-768) {
+    display: block;
+  }
 }
