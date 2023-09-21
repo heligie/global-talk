@@ -9,10 +9,25 @@
 .vocabulary__header {
   display: grid;
   justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  margin: 0 auto;
   padding: 20px;
 
+  gap: 20px;
+
   @include box-primary;
-  row-gap: 20px;
+
+  @media (min-width: $vp-768) {
+    justify-content: space-between;
+    max-width: 100%;
+
+    grid-template-columns: repeat(2, 301px);
+  }
+
+  @media (min-width: $vp-1280) {
+    grid-template-columns: auto 301px;
+  }
 }
 
 .vocabulary__meta {

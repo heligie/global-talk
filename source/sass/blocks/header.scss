@@ -20,6 +20,10 @@
   @media (min-width: $vp-768) {
     align-items: start;
   }
+
+  @media (min-width: $vp-1280) {
+    column-gap: 60px;
+  }
 }
 
 .header__toggle {
@@ -165,5 +169,9 @@
 
   @media (min-width: $vp-1280) {
     margin: 10px 0 0 0;
+
+    &::before {
+      left: -30px;
+    }
   }
 }

@@ -4,7 +4,7 @@
 
   column-gap: 80px;
 
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
 }
 
 .stats__wrapper {
@@ -43,8 +43,19 @@
     color: $cyan-dark;
   }
 
+  @media (min-width: $vp-768) {
+    font-size: 32px;
+    line-height: 32px;
+
+    svg {
+      width: 20px;
+      height: 25px;
+    }
+  }
+
   @media (min-width: $vp-1280) {
     font-size: 40px;
+    line-height: 40px;
 
     svg {
       width: 24px;
@@ -60,6 +71,11 @@
   line-height: 17px;
   color: $grey-dark;
   text-transform: lowercase;
+
+  @media (min-width: $vp-768) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 
   @media (min-width: $vp-1280) {
     font-size: 16px;

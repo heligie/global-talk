@@ -3,6 +3,10 @@
 
   justify-items: center;
   row-gap: 20px;
+
+  @media (min-width: $vp-768) {
+    justify-items: start;
+  }
 }
 
 .levels__fieldset {
@@ -33,6 +37,16 @@
   column-gap: 6px;
 
   row-gap: 10px;
+
+  @media (min-width: $vp-768) {
+    justify-content: start;
+
+    column-gap: 14px;
+  }
+
+  @media (min-width: $vp-1280) {
+    column-gap: 20px;
+  }
 }
 
 .levels__label {

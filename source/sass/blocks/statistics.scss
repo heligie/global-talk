@@ -1,19 +1,50 @@
 .statistics {
+  padding: 20px 0 40px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $vp-1280) {
+    padding: 60px 0;
+  }
+}
+
+.statistics__wrapper {
   display: grid;
-  padding: 20px 20px 40px 20px;
 
   row-gap: 20px;
+
+  @media (min-width: $vp-768) {
+    row-gap: 30px;
+  }
+
+  @media (min-width: $vp-1280) {
+    row-gap: 40px;
+  }
 }
 
 .statistics__element {
   display: none;
-  max-width: 535px;
+  max-width: 350px;
   margin: 0 auto;
 
   row-gap: 20px;
 
   &.is-active {
     display: grid;
+  }
+
+  @media (min-width: $vp-768) {
+    max-width: 500px;
+  }
+
+  @media (min-width: $vp-1280) {
+    max-width: 100%;
+
+    column-gap: 10px;
+
+    grid-template-columns: 500px auto;
   }
 }
 
@@ -26,6 +57,13 @@
   @include box-primary;
   justify-items: center;
   row-gap: 18px;
+
+  @media (min-width: $vp-768) {
+    padding: 40px;
+
+    justify-items: stretch;
+    row-gap: 20px;
+  }
 }
 
 .statistics__image {
@@ -37,6 +75,10 @@
   height: 60px;
 
   transform: translateX(-50%);
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
 }
 
 .statistics__games {

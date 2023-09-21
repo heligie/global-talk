@@ -1,16 +1,38 @@
 .game {
-  padding: 40px 20px;
+  padding: 40px 0;
+
+  @media (min-width: $vp-768) {
+    padding: 50px 0;
+  }
+
+  @media (min-width: $vp-1280) {
+    padding: 60px 0;
+  }
 }
 
 .game__wrapper {
   display: grid;
-  max-width: 535px;
+  align-items: center;
+  max-width: 350px;
   margin: 0 auto;
   padding: 20px;
 
   @include box-primary;
   justify-items: center;
   row-gap: 12px;
+
+  @media (min-width: $vp-768) {
+    max-width: 640px;
+    padding: 20px 40px;
+
+    grid-template-columns: 200px auto;
+  }
+
+  @media (min-width: $vp-1280) {
+    max-width: 737px;
+
+    grid-template-columns: 250px auto;
+  }
 }
 
 .game__content {

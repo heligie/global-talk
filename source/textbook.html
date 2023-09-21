@@ -29,10 +29,10 @@
         <nav class="header__navigation main-menu main-menu--basic">
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--current" href="index.html">Home</a>
+              <a class="main-menu__link" href="index.html">Home</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="textbook.html" aria-current="page">Textbook</a>
+              <a class="main-menu__link main-menu__link--current" href="textbook.html" aria-current="page">Textbook</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="statistics.html">Statistics</a>
@@ -115,78 +115,194 @@
           <li class="vocabulary__level">C1<span class="badge badge--hard">Hard</span></li>
           <li class="vocabulary__level">C2<span class="badge badge--hard">Hard</span></li>
         </ul>
-        <div class="vocabulary__content" data-tabs="content">
-          <div class="container">
+        <div class="container">
+          <div class="vocabulary__content" data-tabs="content">
             <div class="vocabulary__element" data-tabs="element">
-            <!-- Card -->
-            <ul class="card">
-              <li class="card__item">
-                <div class="card__image">
-                  <picture>
-                    <img src="img/content/remark-mobile.jpg" srcset="img/content/remark-mobile@2x.jpg 2x" width="335" height="137" alt="">
-                  </picture>
-                </div>
-                <div class="card__content">
-                  <div class="card__set">
-                    <div class="card__word">
-                      <span class="card__origin">Remark</span>
-                      <span class="card__slash">&#47;</span>
-                      <span class="card__translate">Remarque</span>
+              <!-- Card -->
+              <ul class="card">
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/remark-mobile.jpg" srcset="img/content/remark-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">Remark</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Remarque</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
                     </div>
-                    <button class="card__pronounce">
-                      <svg width="40" height="40" aria-hidden="true" focusable="false">
-                        <use href="img/sprite.svg#audio-word"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <span class="card__transcription">[rimɑ́ːrk]<span class="badge badge--compound">Compound</span></span>
-                  <div class="card__description">
-                    <p class="card__explanation">To remark is to say something. - Remarquer, c'est dire quelque chose.</p>
-                    <p class="card__example">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
-                  </div>
-                  <div class="card__control">
-                    <button class="button button--learned">Add to learned</button>
-                    <button class="button button--dictionary">Add to dictionary</button>
-                  </div>
-                </div>
-              </li>
-              <li class="card__item">
-                <div class="card__image">
-                  <picture>
-                    <img src="img/content/awful-mobile.jpg" srcset="img/content/awful-mobile@2x.jpg 2x" width="335" height="137" alt="">
-                  </picture>
-                </div>
-                <div class="card__content">
-                  <div class="card__set">
-                    <div class="card__word">
-                      <span class="card__origin">Awful</span>
-                      <span class="card__slash">&#47;</span>
-                      <span class="card__translate">Terrible</span>
+                    <span class="card__transcription">[rimɑ́ːrk]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">To remark is to say something. - Remarquer, c'est dire quelque chose.</p>
+                      <p class="card__example">The teacher remarked on how quickly the students were learning. L'enseignant a noté la rapidité avec laquelle les élèves apprenaient.</p>
                     </div>
-                    <button class="card__pronounce">
-                      <svg width="40" height="40" aria-hidden="true" focusable="false">
-                        <use href="img/sprite.svg#audio-word"></use>
-                      </svg>
-                    </button>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
                   </div>
-                  <span class="card__transcription">[ˈɔfəl]<span class="badge badge--compound">Compound</span></span>
-                  <div class="card__description">
-                    <p class="card__explanation">Oppressing with fear or horror; appalling, terrible. - Oppressant de peur ou d'horreur; épouvantable, terrible.</p>
-                    <p class="card__example">I realized then that this awful cellar was the only place that could save our lives. Je réalisai alors que cette horrible cave était le seul endroit qui pouvait sauver nos vies.</p>
+                </li>
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/rain-mobile.jpg" srcset="img/content/rain-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
                   </div>
-                  <div class="card__control">
-                    <button class="button button--learned">Add to learned</button>
-                    <button class="button button--dictionary">Add to dictionary</button>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">Rain</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Pluie</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <span class="card__transcription">[reɪn]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">A bicycle will rust if you leave it in the rain. - Un vélo rouille, si tu le laisses sous la pluie.</p>
+                      <p class="card__example">A few miles from the campus, there was an abandoned quarry... which had been filled by the spring rains. Il y avait à quelques kilomètres du campus une ancienne carrière qui s'était remplie d'eau de pluie.</p>
+                    </div>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
                   </div>
-                </div>
-              </li>
-            </ul>
-
-
+                </li>
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/awful-mobile.jpg" srcset="img/content/awful-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">Awful</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Terrible</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <span class="card__transcription">[ˈɔfəl]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">Oppressing with fear or horror; appalling, terrible. - Oppressant de peur ou d'horreur; épouvantable, terrible.</p>
+                      <p class="card__example">I realized then that this awful cellar was the only place that could save our lives. Je réalisai alors que cette horrible cave était le seul endroit qui pouvait sauver nos vies.</p>
+                    </div>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/journey-mobile.jpg" srcset="img/content/journey-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">Journey</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Voyage</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <span class="card__transcription">[ˈdʒɜːnɪ]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">Happiness isn't the destination, happiness is the journey. - Le bonheur n'est pas la destination, le bonheur, c'est le voyage.</p>
+                      <p class="card__example">They won' t get home, but I' m more than willing to hasten their journey to Sto' vo' kor. Ils ne rentreront pas chez eux, mais je suis sûr que leur voyage vers Sto' vo' kor va s' accélérer.</p>
+                    </div>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/depth-mobile.jpg" srcset="img/content/depth-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">Depth</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Profondeur</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <span class="card__transcription">[depθ]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">I'm afraid my depth perception is very poor. - J'ai peur que ma perception de la profondeur soit très mauvaise.</p>
+                      <p class="card__example">The Commission then arranged a meeting for these points to be discussed in more depth. La Commission a fixé une réunion pour discuter de ces points plus en profondeur.</p>
+                    </div>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="card__item">
+                  <div class="card__image">
+                    <picture>
+                      <img src="img/content/city-mobile.jpg" srcset="img/content/city-mobile@2x.jpg 2x" width="335" height="137" alt="">
+                    </picture>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__set">
+                      <div class="card__word">
+                        <span class="card__origin">City</span>
+                        <span class="card__slash">&#47;</span>
+                        <span class="card__translate">Ville</span>
+                      </div>
+                      <button class="card__pronounce">
+                        <svg width="40" height="40" aria-hidden="true" focusable="false">
+                          <use href="img/sprite.svg#audio-word"></use>
+                        </svg>
+                      </button>
+                    </div>
+                    <span class="card__transcription">[ˈsɪtɪ]<span class="badge badge--compound">Compound</span></span>
+                    <div class="card__description">
+                      <p class="card__explanation">They live in a city close to Beijing. - Ils habitent dans une ville proche de Pékin.</p>
+                      <p class="card__example">Because they want to leave the village and go to a city, looking for a job. Parce qu'ils veulent quitter le village pour aller en ville, chercher un emploi.</p>
+                    </div>
+                    <div class="card__control">
+                      <button class="button button--learned">Add to learned</button>
+                      <button class="button button--dictionary">Add to dictionary</button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="vocabulary__element" data-tabs="element">
-
-            </div>
+            <div class="vocabulary__element" data-tabs="element"></div>
           </div>
         </div>
       </div>

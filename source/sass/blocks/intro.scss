@@ -1,5 +1,6 @@
 .intro {
   padding: 40px 0 20px 0;
+  overflow: hidden;
 
   @media (min-width: $vp-768) {
     padding: 95px 0 115px 0;
@@ -59,4 +60,8 @@
   @media (min-width: $vp-1280) {
     min-height: 600px;
   }
+}
+
+.intro__stats {
+  justify-items: start;
 }

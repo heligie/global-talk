@@ -55,6 +55,9 @@
   cursor: pointer;
 
   svg {
+    width: 24px;
+    height: 24px;
+
     fill: $grey-icon;
   }
 
@@ -63,6 +66,16 @@
 
     svg {
       fill: $color-black;
+    }
+  }
+
+  @media (min-width: $vp-1280) {
+    font-size: 26px;
+    line-height: 26px;
+
+    svg {
+      width: 32px;
+      height: 32px;
     }
   }
 }

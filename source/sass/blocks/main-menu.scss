@@ -36,6 +36,10 @@
     &--basic {
       font-size: 16px;
       line-height: 22px;
+
+      ul {
+        column-gap: 30px;
+      }
     }
 
     &--optional {
@@ -71,6 +75,10 @@
       row-gap: 20px;
     }
   }
+
+  @media (min-width: $vp-1280) {
+    column-gap: 30px;
+  }
 }
 
 .main-menu__link {
@@ -102,9 +110,11 @@
         width: 8px;
         height: 5px;
 
-        background-image: url("../../img/svg/tick.svg");
-        background-repeat: no-repeat;
+        background-color: currentColor;
         transform: translateY(-50%);
+
+        mask-image: url("../../img/svg/tick.svg");
+        mask-repeat: no-repeat;
       }
     }
   }

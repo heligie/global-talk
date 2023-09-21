@@ -7,17 +7,12 @@
 }
 
 .heading__title {
-  display: flex;
-  justify-content: center;
-  align-items: start;
   max-width: 335px;
   margin: 0 0 8px 0;
 
   font-size: 24px;
   line-height: 24px;
   font-family: $ff-dela;
-
-  gap: 8px;
 
   &--large {
     margin: 0 0 12px 0;

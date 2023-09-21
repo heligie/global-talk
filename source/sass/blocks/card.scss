@@ -1,15 +1,20 @@
 .card {
   display: grid;
+  justify-content: center;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   gap: 20px;
+  grid-template-columns: repeat(auto-fill, 335px);
 }
 
 .card__item {
+  display: grid;
   overflow: clip;
+
+  grid-template-rows: auto 1fr;
 
   @include box-primary;
 }
@@ -34,6 +39,8 @@
 }
 
 .card__content {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 
   background-color: $color-white;
@@ -83,6 +90,7 @@
 }
 
 .card__description {
+  flex-grow: 1;
   margin: 8px 0;
 
   font-weight: 500;

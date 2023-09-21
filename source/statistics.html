@@ -29,13 +29,13 @@
         <nav class="header__navigation main-menu main-menu--basic">
           <ul class="main-menu__list">
             <li class="main-menu__item">
-              <a class="main-menu__link main-menu__link--current" href="index.html">Home</a>
+              <a class="main-menu__link" href="index.html">Home</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link" href="textbook.html">Textbook</a>
             </li>
             <li class="main-menu__item">
-              <a class="main-menu__link" href="statistics.html" aria-current="page">Statistics</a>
+              <a class="main-menu__link main-menu__link--current" href="statistics.html" aria-current="page">Statistics</a>
             </li>
             <li class="main-menu__item">
               <a class="main-menu__link main-menu__link--dropdown" href="#">Games</a>
@@ -66,118 +66,122 @@
   </header>
   <main>
     <section class="statistics" data-tabs="parent">
-      <h1 class="visually-hidden">Analysis of your statistics.</h1>
-      <ul class="statistics__tabs tabs tabs--underline" data-tabs="controls">
-        <li class="tabs__item">
-          <button class="tabs__control is-active" data-tabs="control">For the day</button>
-        </li>
-        <li class="tabs__item">
-          <button class="tabs__control" data-tabs="control">For all the time</button>
-        </li>
-      </ul>
-      <div class="statistics__content" data-tabs="content">
-        <div class="statistics__element is-active" data-tabs="element">
-          <div class="statistics__activity">
-            <div class="statistics__image">
-              <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
-            </div>
-            <div class="statistics__heading heading">
-              <h2 class="heading__title">Today's statistics</h2>
-              <p class="heading__description">Your statistics on all activities</p>
-            </div>
-            <dl class="statistics__stats stats">
-              <div class="stats__wrapper">
-                <dt class="stats__number">0<span>&#43;</span></dt>
-                <dd class="stats__text">Words studied</dd>
-              </div>
-              <div class="stats__wrapper">
-                <dt class="stats__number">0<span>&#37;</span></dt>
-                <dd class="stats__text">Correct answers</dd>
-              </div>
-            </dl>
-            <div class="statistics__games">
-              <div class="statistics__game">
-                <div class="statistics__game-image">
-                  <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
+      <div class="container">
+        <div class="statistics__wrapper">
+          <h1 class="visually-hidden">Analysis of your statistics.</h1>
+          <ul class="statistics__tabs tabs tabs--underline" data-tabs="controls">
+            <li class="tabs__item">
+              <button class="tabs__control is-active" data-tabs="control">For the day</button>
+            </li>
+            <li class="tabs__item">
+              <button class="tabs__control" data-tabs="control">For all the time</button>
+            </li>
+          </ul>
+          <div class="statistics__content" data-tabs="content">
+            <div class="statistics__element is-active" data-tabs="element">
+              <div class="statistics__activity">
+                <div class="statistics__image">
+                  <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
                 </div>
-                <div class="statistics__game-content">
-                  <h3 class="statistics__title">Sprint<span class="badge badge--primary">Speed task</span></h3>
-                  <ul class="statistics__list">
-                    <li class="statistics__item"><span>0</span> words studied</li>
-                    <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
-                    <li class="statistics__item"><span>0</span> best series of correct answers</li>
-                  </ul>
+                <div class="statistics__headline headline">
+                  <h2 class="headline__title">Today's statistics</h2>
+                  <p class="headline__description">Your statistics on all activities</p>
                 </div>
-              </div>
-              <div class="statistics__game">
-                <div class="statistics__game-image">
-                  <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
-                </div>
-                <div class="statistics__game-content">
-                  <h3 class="statistics__title">Audio-Call<span class="badge badge--primary">Audition task</span></h3>
-                  <ul class="statistics__list">
-                    <li class="statistics__item"><span>0</span> words studied</li>
-                    <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
-                    <li class="statistics__item"><span>0</span> best series of correct answers</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="statistics__chart">
-            <canvas role="img" id="canvas-day" width="300" height="156"></canvas>
-          </div>
-        </div>
-        <div class="statistics__element" data-tabs="element">
-          <div class="statistics__activity">
-            <div class="statistics__image">
-              <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
-            </div>
-            <div class="statistics__heading heading">
-              <h2 class="heading__title">All-time statistics</h2>
-              <p class="heading__description">Your statistics on all activities</p>
-            </div>
-            <dl class="statistics__stats stats">
-              <div class="stats__wrapper">
-                <dt class="stats__number">10<span>&#43;</span></dt>
-                <dd class="stats__text">Words studied</dd>
-              </div>
-              <div class="stats__wrapper">
-                <dt class="stats__number">43<span>&#37;</span></dt>
-                <dd class="stats__text">Correct answers</dd>
-              </div>
-            </dl>
-            <div class="statistics__games">
-              <div class="statistics__game">
-                <div class="statistics__game-image">
-                  <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
-                </div>
-                <div class="statistics__game-content">
-                  <h3 class="statistics__title">Sprint <span class="badge badge--primary">Speed task</span></h3>
-                  <ul class="statistics__list">
-                    <li class="statistics__item"><span>5</span> words studied</li>
-                    <li class="statistics__item"><span>90<span>&#37;</span></span> correct answers</li>
-                    <li class="statistics__item"><span>7</span> best series of correct answers</li>
-                  </ul>
+                <dl class="statistics__stats stats">
+                  <div class="stats__wrapper">
+                    <dt class="stats__number">0<span>&#43;</span></dt>
+                    <dd class="stats__text">Words studied</dd>
+                  </div>
+                  <div class="stats__wrapper">
+                    <dt class="stats__number">0<span>&#37;</span></dt>
+                    <dd class="stats__text">Correct answers</dd>
+                  </div>
+                </dl>
+                <div class="statistics__games">
+                  <div class="statistics__game">
+                    <div class="statistics__game-image">
+                      <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
+                    </div>
+                    <div class="statistics__game-content">
+                      <h3 class="statistics__title">Sprint<span class="badge badge--primary">Speed task</span></h3>
+                      <ul class="statistics__list">
+                        <li class="statistics__item"><span>0</span> words studied</li>
+                        <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
+                        <li class="statistics__item"><span>0</span> best series of correct answers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="statistics__game">
+                    <div class="statistics__game-image">
+                      <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
+                    </div>
+                    <div class="statistics__game-content">
+                      <h3 class="statistics__title">Audio-Call<span class="badge badge--primary">Audition task</span></h3>
+                      <ul class="statistics__list">
+                        <li class="statistics__item"><span>0</span> words studied</li>
+                        <li class="statistics__item"><span>0<span>&#37;</span></span> correct answers</li>
+                        <li class="statistics__item"><span>0</span> best series of correct answers</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="statistics__game">
-                <div class="statistics__game-image">
-                  <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
-                </div>
-                <div class="statistics__game-content">
-                  <h3 class="statistics__title">Audio-Call <span class="badge badge--primary">Audition task</span></h3>
-                  <ul class="statistics__list">
-                    <li class="statistics__item"><span>8</span> words studied</li>
-                    <li class="statistics__item"><span>87<span>&#37;</span></span> correct answers</li>
-                    <li class="statistics__item"><span>9</span> best series of correct answers</li>
-                  </ul>
-                </div>
+              <div class="statistics__chart">
+                <canvas role="img" id="canvas-day" width="300" height="156"></canvas>
               </div>
             </div>
-          </div>
-          <div class="statistics__chart">
-            <canvas role="img" id="canvas-all" width="300" height="156"></canvas>
+            <div class="statistics__element" data-tabs="element">
+              <div class="statistics__activity">
+                <div class="statistics__image">
+                  <img src="img/content/statistics-image.svg" width="60" height="60" alt="Notepad, glasses and pencil.">
+                </div>
+                <div class="statistics__headline headline">
+                  <h2 class="headline__title">All-time statistics</h2>
+                  <p class="headline__description">Your statistics on all activities</p>
+                </div>
+                <dl class="statistics__stats stats">
+                  <div class="stats__wrapper">
+                    <dt class="stats__number">10<span>&#43;</span></dt>
+                    <dd class="stats__text">Words studied</dd>
+                  </div>
+                  <div class="stats__wrapper">
+                    <dt class="stats__number">43<span>&#37;</span></dt>
+                    <dd class="stats__text">Correct answers</dd>
+                  </div>
+                </dl>
+                <div class="statistics__games">
+                  <div class="statistics__game">
+                    <div class="statistics__game-image">
+                      <img src="img/content/sprint-girl.png" srcset="img/content/sprint-girl@2x.png 2x" width="70" height="112" alt="Running girl.">
+                    </div>
+                    <div class="statistics__game-content">
+                      <h3 class="statistics__title">Sprint <span class="badge badge--primary">Speed task</span></h3>
+                      <ul class="statistics__list">
+                        <li class="statistics__item"><span>5</span> words studied</li>
+                        <li class="statistics__item"><span>90<span>&#37;</span></span> correct answers</li>
+                        <li class="statistics__item"><span>7</span> best series of correct answers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="statistics__game">
+                    <div class="statistics__game-image">
+                      <img src="img/content/music-girl.png" srcset="img/content/music-girl@2x.png 2x" width="70" height="112" alt="The girl with the notes.">
+                    </div>
+                    <div class="statistics__game-content">
+                      <h3 class="statistics__title">Audio-Call <span class="badge badge--primary">Audition task</span></h3>
+                      <ul class="statistics__list">
+                        <li class="statistics__item"><span>8</span> words studied</li>
+                        <li class="statistics__item"><span>87<span>&#37;</span></span> correct answers</li>
+                        <li class="statistics__item"><span>9</span> best series of correct answers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="statistics__chart">
+                <canvas role="img" id="canvas-all" width="300" height="156"></canvas>
+              </div>
+            </div>
           </div>
         </div>
       </div>

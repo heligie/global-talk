@@ -24,6 +24,7 @@
   @media (min-width: $vp-1280) {
     &--cropped {
       .guide__image {
+        align-self: end;
         max-height: 474px;
       }
     }
