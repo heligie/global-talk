@@ -74,6 +74,10 @@
       @include box-secondary;
       row-gap: 20px;
     }
+
+    &--dropdown.is-open {
+      display: grid;
+    }
   }
 
   @media (min-width: $vp-1280) {
